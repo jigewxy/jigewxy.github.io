@@ -1,28 +1,31 @@
 var app = angular.module('myApp',["ngRoute"]);
 
+app.config(['$locationProvider', function($locationProvider){
+  $locationProvider.hashPrefix('');    
+}]); 
+
 app.config(function($routeProvider){
     $routeProvider
     .when("/resume", {
-      templateUrl: "resume.html",
-      controller: "resumeCtrl"
+      templateUrl: "pages/resume.html",
+      //controller: "resumeCtrl"
     })
     .when("/webdev",{
-       templateUrl:"webdev.html",
-       controller: "webDevCtrl"
+       templateUrl:"pages/webdev.html",
+       //controller: "webDevCtrl"
     })
     .when("/embed", {
-        templateUrl:"embed.html",
-        controller: "embedCtrl"
+        templateUrl:"pages/embed.html",
+       // controller: "embedCtrl"
     })
     .when("/misc",{
-        templateUrl:"misc.html",
-        controller:"miscCtrl"})
-    .otherwise({redirectTo: "/webdev"})
+        templateUrl:"pages/misc.html",
+        //controller:"miscCtrl"});
  });
+});
 
 
-
- app.controller("resumeCtrl", function($scope){
+ /*app.controller("resumeCtrl", function($scope){
   
     console.log("resumeCtrl");
 
@@ -43,4 +46,4 @@ app.controller("embedCtrl", function($scope){
 app.controller("miscCtrl", function($scope){
 
   console.log("miscCtrl");
-});
+});*/

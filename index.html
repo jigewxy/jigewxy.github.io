@@ -3,21 +3,22 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 <script src="js/app.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="style/main.css">
 </head>
-<body>
-<div ng-app="myApp" class="container-fluid">
+<body ng-app="myApp">
+<div class="container-fluid">
      <div class="jumbotron">
-       <h2>Cliff's Posthouse</h2>
-       <a href="#resume.html">About Me </a>
-       <a href="#webdev.html">Web Dev</a>
-       <a href="#embed.html">RTOS Dev</a>
-       <a href="#misc.html">Miscellaneous </a>
+       <h2>Welcome To My Blog</h2>
+       <a href="#resume">About Me </a>
+       <a href="#webdev">Web Dev</a>
+       <a href="#embed">RTOS Dev</a>
+       <a href="#misc">Miscellaneous </a>
      </div>
+     <div ng-view></div>
 </div>
 </body>
 </html>
