@@ -40,7 +40,7 @@ app.controller("embedCtrl", function($scope){
 
 });
 
-app.controller("misc", function($scope){
+app.controller("miscCtrl", function($scope){
 
   console.log("miscCtrl");
 });
