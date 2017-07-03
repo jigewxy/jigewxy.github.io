@@ -41,6 +41,6 @@ app.controller("embedCtrl", function($scope){
 });
 
 app.controller("misc", function($scope){
-    
+
   console.log("miscCtrl");
 });
