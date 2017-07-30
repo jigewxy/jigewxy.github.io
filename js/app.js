@@ -10,18 +10,14 @@ app.config(function($routeProvider){
       templateUrl: "pages/resume.html",
       //controller: "resumeCtrl"
     })
-    .when("/webdev",{
-       templateUrl:"pages/webdev.html",
+    .when("/daily",{
+       templateUrl:"pages/day.html",
        //controller: "webDevCtrl"
     })
-    .when("/embed", {
-        templateUrl:"pages/embed.html",
+    .when("/weekly", {
+        templateUrl:"pages/week.html",
        // controller: "embedCtrl"
     })
-    .when("/misc",{
-        templateUrl:"pages/misc.html",
-        //controller:"miscCtrl"});
- });
 });
 
 

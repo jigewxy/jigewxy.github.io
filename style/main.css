@@ -3,3 +3,25 @@ div.jumbotron h2{
  font-family: Garamond;
 
 }
+
+
+body{
+  background:  #f4f4f4 url(../images/background.png);
+}
+
+div#left-nav{
+
+height: 100vh;
+
+}
+
+ul.ul-nav{
+
+list-style:none;
+}
+
+ul.ul-nav li{
+
+margin-left: -30pt;
+width:100pt;
+}

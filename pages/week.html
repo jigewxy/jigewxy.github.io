@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container-fluid">
+<!--div id="left-nav" class= "col-md-1">
+<ul class="ul-nav">
+<li><a href="#intro">前言</a></li>
+<li><a href="#front-end">1.Front End 前端 </a></li>
+</ul>
+</div-->
+
+<div id="main-content">
+<div id="intro" class= "col-md-10">
+<h3>前言</h3>
+<blockquote>
+分享一些关于自学编程的经验之谈.  <hr> 第一点是<b>目标明确</b>, 在开始之前，要问自己学习的目的是什么，不是短期目的而是长期目的，如果你说想开发一个网络爬虫, 或者建一个网站, 但这不是答案.
+如果你想长期投入时间学习的话，必须要想清楚你想要得到什么，想换一份工作? 纯粹出于业余爱好? 还是尝试一下而已.  没有目的你就不会有强烈的驱动力，<b>零零散散,漫无目的的努力反而是浪费时间</b>.
+如果你内心的答案很明确，就是想学一份技能，换一份工作，那么下一步就是找到自己的兴趣所在以及行业情况，问自己下面几个问题： <br>
+     <em>想投身哪个行业? </em> 比如说, 大数据，网站建设，嵌入式，桌面应用，手机APP...等等. <br>
+     <em>对哪种技能最有兴趣?</em> 比如说，数据挖掘， 数据可视化，数据库管理, 前端，后端，安卓，iOS...等等..<br>
+     <em>感兴趣的技能里面需要哪些知识储备?</em> 各种语言都有自己的特性，所以适用的范围也不一样. 有的语言门槛高，需要大量基础计算机知识(内存,i/o, 栈，堆等等)，比如c/c++/java,由于性能好，通常用于大型软件开发；
+      有的门槛不高，侧重在本身程序的逻辑性，较少考虑硬件，比如Python,javascript,PHP等等. <br>
+
+
+<hr> 第二点是<b>制定计划</b>.有了目标之后就要有相应的计划去实现， 如果对数据这块感兴趣，就该去了解R和Python Pandas, 不要浪费太多时间在其他方向上，当然懂得越多越好，但是<b>人的精力是极其有限的</b>.
+对初学者来说，我的建议是从较好入门的语言开始,比如说Python, Python的适用范围最广，几乎无所不能，从大型软件到网站开发，从数据挖掘到机器学习，Python都是比较受欢迎的语言. <br>
+就我个人的经验来说，前两步我会建议这样走:<br><br>
+第一步:<strong>打好语言基础</strong>，给自己一两个月时间，看一个视频，学一个教程，看一本书，为什么要三者结合? 这是有道理的: 视频通常会给你一个总体概念，讲的都是浓缩后的精华和知识点;  教程能让你有编程的手感，和避免一些低级错误，也能在编程的过程中更理解所学的概念，初学者通常会忽略
+编程练习，这是不对的，光看不练习的话你以后写程序的时候会因为频繁犯错误而极其痛苦，或者不知道怎么开始. 注意:<b>复制+拷贝模式是不可取的</b>. 哪怕是模仿，也不要直接复制+拷贝; 看一本好的教材也是非常重要的， 没有系统化的知识
+在人脑中的保留时间不会很长，看书就可以让你把各个知识点联系起来从而系统化, 当然实体书和电子书都有一样的效果，只是本人偏好实体书. <br><br>
+第二步:<strong>练手</strong>. 有了一定的基础，就可以开始一些小项目了，不要做哪些过于庞大的项目，你会被沮丧感击垮的，先从自己力所能及又能实实在在提供便利的项目开始，可以是一个工具，可以是一个脚本. 比如说，你想对自己的行业做个深度挖掘的爬虫出来，然后以
+Python pandas 进行数据分析, 又或者，了解一下你身边的朋友有没有这方面的需要，你可以帮他实现. 总之抓住一切可以练手的机会, 如果你告诉我实在是没有什么主意. 那就请买一本项目实践的书来一个例子一个例子的做，我相信这类书很多.
+
+
+</blockquote>
+</div>
+
+<div id="part1" class="col-md-10">
+<h3>1.Front End 前端</h3>
+<blockquote>
+前端是指浏览器运行的HTML5或者Javascript. 当客户端发送一个连接请求给web服务器, web服务器会根据请求的URL地址来做具体回应, 而回应通常是根据服务器端的路由(routing)决定的, 比如说：qq.com/mail 是qq邮箱, qq.com/spaces是qq空间, 
+而服务器端会根据不同的路由来响应给不同的页面 - 可能是html, 也可能是asp或者php等动态页面, 我们这里先设定是html静态页面. 然后我们来看看html的结构:
+<hr>
+<code>
+    <br> &lt;html&gt;
+    <br> <kbd> &nbsp;&nbsp;&lt;head&gt; </kbd>
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Bootstrap Example&lt;/title&gt; 
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="mystyle.css"&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="myapp.js"&gt;&lt;/script&gt;
+    <br> <kbd>&nbsp;&nbsp;&lt;/head&gt;</kbd>
+
+    <br> <kbd>&nbsp;&nbsp;&lt;body&gt;</kbd>
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;header&lt;/h1&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;paragraph&lt;/p&gt;
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+    <br> <kbd>&nbsp;&nbsp;&lt;/body&gt;</kbd>
+
+    <br> &lt;/html&gt;
+</code><hr>
+
+ 从上可以看到一个完整的html文件主要包含两部分： header和body. header里面除了放置标题(title), 和一些基本设置(meta), 最主要的是定义与其他文件的连接, 也就是说要渲染这个html页面, 我们需要哪些其他的文件, 
+ 这些都在link和script里面,  它可以是内部文件(相对路径), 也可以是外部文件(绝对URL路径). link通常包含css格式文件,  就是设置html格式的, 也叫stylesheet. script通常用于链接javascript文件, 主要负责用户交互和动态呈现.
+ <b>注意:</b> 服务器端只提供HTML/CSS/JAVASCRIPT文件，而文件本身是在客户端运行的.
+
+ <br>
+ 另外body是html的正文, 顾名思义, 它就是想呈现给用户的内容. 
+ <br><br>
+ 当客户端解析这个html文件的时候,  它会根据head和body来做不同的处理.或许你有个疑问, 客户端究竟是什么,  很简单, 狭义上来说,  就是浏览器. 早年的浏览器由于WEB开发还不是很规范, 所以有很多兼容性问题, 根本原因
+ 就是HTML,CSS和javascript解析器的各自为战. 也许你要问,  解析器又是什么, 这里有个链接,  可以了解一下 <a href="http://www.w3school.com.cn/xml/xml_parser.asp" target="_blank">XML 解析器</a>
+ <br><br>
+ 
+ <pre>这里也想讲一下究竟javascript/html/css和常用的C/C++/JAVA有什么不同, 语言分两种:<br>
+ 1. 解释性语言(HTML, javascript, php, <em>python</em>,  ruby...).<br>
+ 2. 编译性语言(c, c++, Java, go, assembly..)
+<br>
+ 解释性语言利用解释器(interpreter)将源代码转换为机器语言(machine language),每次运行都会重新解释一次, 注意这里运行和解释是一个动作,  没有所谓的预编译, 所以也叫做脚本语言. 
+ 由于没有预编译, 只有运行的时候我们才知道会不会出问题.
+ 编译性语言利用编译器(compiler)将源代码转换为机器语言,  而运行和编译是分开的两个步骤, 通过编译我们会生成一个object(.o) 文件, 这个就是output,包含的是机器语言, 程序运行就是用的.o文件.
+ 一些错误也可以在编译过程中发现. </pre>
+ <br><br>
+
+<b class="text-primary">回到前端</b>, 相信你现在应该明白前端究竟是什么了， 总结一下：<u>前端指的是所有客户端运行的部分，主要包括HTML/CSS/JAVASCRIPT等用于前端渲染的程序.其中，javascript是核心，因为
+它是完成动态渲染， 页面交互， 服务器通信的关键.</u> 我们开发前端的时候，几乎不会用原生态的javascript来写，而是采用一些框架，比如说Angular(Google开发), React(Facebook 开发), Vue这三个主流框架, 主要原因是开发效率，
+打个简单的比方，修房子的人通常不会自己造砖造钢筋吧. 当然并不是说原生态的javascript不重要，相反，原生js才是一切框架的基础，想深入理解框架的精髓就需要很深厚的js知识储备. <br>
+在项目中使用怎样的框架是见仁见智的问题, 当前主流的三个框架都各有优缺点, 目前我也只学习了Angular, React和Vue只是了解了一些. 我不是很习惯React里面的Javascript和HTML掺杂在一起的语法(JSP), 然后Vue和Angular
+有很多类似之处，但是比较轻量级，也集合了React里面的一些优秀理念， 但是社区没有Angular活跃，对于自学不是很好的事情. 所以我还是选择了Angular. <hr>
+
+<pre>这里我们一直在提框架， 框架究竟是什么? <br>顾名思义，框架就是架构，就是支撑整个系统的基本结构, 而被大众所接受的框架必定经过了千锤百炼, 各方面都不断地优化过. 打个比方说, 建筑商要建一大片小区， 几百栋楼，
+显而易见的是，我们不会为每栋楼都设计迥异的图纸，而是用一张基本的图纸作为样本来架构，楼层多高，楼道怎么设计，户型怎么安排，外观如何美化... 这些设计都可以被提炼(abstract)出来作为基本架构-也就是框架. <br>
+回到前端， 框架无非就是前人用自己的经验，把优良的设计总结提炼，把众多复杂功能以简单易用的方式封装起来，从而极大提高了开发效率.<br>
+web框架主要有三类：前端框架, 后端框架和全栈框架(包括前后端). Python的Django, PHP里面的CI, Lavarel, Java的Spring 等等都是全栈框架.要掌握框架不是一样容易的事情，功能越强大的框架学习曲线越陡峭，
+这是必然的.如果你要学习一个全栈框架,一个重要切入点就是理解MVC(Model-View-Controller)概念， model指来源于后端的数据流; view指的是页面的渲染，也就是浏览器呈现的内容; 
+controller就是页面交互-如果把model用view呈现，可以把它理解为model和view之间的纽带. 这篇文章很好地解释了什么是mvc， 你可以读一读: <a href="http://www.ruanyifeng.com/blog/2007/11/mvc.html" target="_blank">谈谈MVC模式</a>.
+大部分框架都是以MVC为基础的.
+
+</blockquote>
+ 
+</div>
+</div>
+</div>
+
+</body>
+</html>
